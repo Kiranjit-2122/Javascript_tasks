@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- events- onclick, ondblclick, onmouseover -->
+     <!-- function call -->
+      <h1 id="id1"></h1>
+      <button onclick="getMsg()">Click</button>
+      <img id="img1" src="nobita.jpeg" onmouseover="changeImg()" onmouseout="changeImg2()">
+      <div id="div1">this is div</div>
+      <button onclick="changeColor()">Change</button>
+      <br> 
+      <input id="in1">
+      <button onclick="getData()">Get</button>
+        <div id="res"></div>
+      <script>
+        function getMsg(){
+            // alert("hello")
+            // console.log("hello")
+            document.getElementById("id1").innerHTML="<u>bye user</u>"
+        }
+        function changeImg(){
+            document.getElementById("img1").src="sizuka.jpeg"
+        }
+        function changeImg2(){
+            document.getElementById("img1").src="nobita.jpeg"
+        }
+        function changeColor(){
+            document.getElementById("div1").style.color="red"
+            document.getElementById("div1").style.backgroundColor="yellow"
+        }
+        function getData(){
+            var a=document.getElementById("in1").value
+                console.log(a);
+            document.getElementById("res").innerHTML=a
+          }
+      </script>
+</body>
+</html>
