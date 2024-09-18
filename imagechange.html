@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img height="350px"  width="350px" id="one" src="sizuka.jpeg" > <br><br>
+    <img height="300px"  width="300px"  src="nobita.jpeg" onmouseover="nobi1()" onmouseout="nobi2()"><space>
+    <img height="300px"  width="300px"  src="suneo.jpeg" onmouseover="suneo1()" onmouseout="nobi2()">
+    <img height="300px"  width="300px"  src="gian.jpeg" onmouseover="gian1()" onmouseout="nobi2()">  
+    <img height="300px"  width="300px"  src="dekisugi.webp" onmouseover="dekisugi1()" onmouseout="nobi2()">  
+    <script>
+        function nobi1(){
+            document.getElementById("one").src="nobita.jpeg"
+        }
+        function suneo1(){
+            document.getElementById("one").src="suneo.jpeg"
+        }
+      
+        function  gian1(){
+            document.getElementById("one").src="gian.jpeg"
+        }
+     
+        function dekisugi1(){
+            document.getElementById("one").src="dekisugi.webp"
+        }
+        function nobi2(){
+            document.getElementById("one").src="sizuka.jpeg"
+        }
+       
+    </script>
+</body>
+</html>
