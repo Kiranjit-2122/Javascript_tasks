@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    Item1  <input id="input1"> <button class="btn btn-danger" onclick="task1()">Add Price</button>  <span id="box1"></span> <br><br>
+    Item2  <input id="input2"> <button  class="btn btn-primary"onclick="task2()">Add Price</button>  <span id="box2"></span> <br><br>
+    Item3  <input id="input3"> <button  class="btn btn-success"onclick="task3()">Add Price</button>  <span id="box3"></span> <br><br>
+    Item4  <input id="input4"> <button class="btn btn-warning"onclick="task4()">Add Price</button>  <span id="box4"></span> <br><br>
+    <button onclick="result()">Get Result</button>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="amount"></div>
+    <script>
+        function task1(){
+          document.getElementById("box1").innerHTML="<input id='input5' />"
+        }
+        function task2(){
+            document.getElementById("box2").innerHTML="<input  id='input6' />"
+        }
+        function task3(){
+            document.getElementById("box3").innerHTML="<input id='input7' />"
+        }
+        function task4(){
+            document.getElementById("box4").innerHTML="<input id='input8' />"
+        }
+        function result(){
+            var a= document.getElementById("input1").value
+            var b= document.getElementById("input5").value
+            var c =a+":"+b
+            document.getElementById("div1").innerHTML=c
+
+            var e = document.getElementById("input2").value
+            var f = document.getElementById("input6").value 
+            var g =e+":"+f
+            document.getElementById("div2").innerHTML=g
+
+            var i=document.getElementById("input3").value
+            var j =document.getElementById("input7").value
+            var k=i+":"+j
+            document.getElementById("div3").innerHTML=k
+
+            var m=document.getElementById("input4").value
+            var n =document.getElementById("input8").value
+            var o=m+":"+n
+            document.getElementById("div4").innerHTML=o
+
+            var z= parseInt(b)+parseInt(f)+parseInt(j)+parseInt(n)
+           document.getElementById("amount").innerHTML="total ="+z
+        }
+           
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
