@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Enter Amount <input id ="amount">
+    Get GST <input id ="GST">
+    <br><br>
+    Total Amount <input id="total"><br><br>
+    <button onclick="get()">Get GST</button> 
+
+    <script>
+
+        function get(){
+           var a = parseInt(document.getElementById("amount").value)
+           var c=(a*18)/100
+           document.getElementById("GST").value=c
+           var d= parseInt(a)+parseInt(c)
+           document.getElementById("total").value=d      
+        }
+
+    </script>
+</body>
+</html>
