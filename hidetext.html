@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<input type="text" id="input"> &nbsp;
+    <!-- <button class="btn btn-info" onclick="password()">Password</button> -->
+     <i class="bi bi-eye-fill" id="one" onclick="heyy()" style="position: relative; right:40px;"></i>
+    <script>
+       function heyy(){
+        document.getElementById("input").type="password"
+        document.getElementById("one").classList.remove("bi-eye-fill")
+        document.getElementById("one").classList.add("bi-eye-slash-fill")
+       }
+    
+    </script>
+</body>
+</html>
