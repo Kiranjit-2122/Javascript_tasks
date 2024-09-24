@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   enter table number <input id="inp1" type="number" min="1"> </br></br>
+   Enter first number<input id="inp2" type="number"> </br></br>
+   Enter last number<input  id="inp3"type="number"> </br></br>
+    <button onclick="output()">Create</button>
+    <div id="div"></div>
+</body>
+<script>
+    function output(){
+        var a = parseInt(document.getElementById("inp1").value) 
+        var b = parseInt(document.getElementById("inp2").value )
+        var c = parseInt(document.getElementById("inp3").value )
+        for (var i=b;i<=c;i++){
+            document.getElementById("div").innerHTML+=a+"*"+i+"="+a*i+"<br>"
+        }
+    }
+</script>
+</html>
