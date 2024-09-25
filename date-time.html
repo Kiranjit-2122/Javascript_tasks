@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="getdata()">
+    <div id="div"></div>
+</body>
+<script>
+    function getdata(){
+        let x=new Date()
+        console.log(x)
+        console.log("Date is ", x.getDate())
+        console.log("Month io ", x.getMonth())
+        console.log("Day is ",x.getDay())
+        console.log("Year is ", x.getFullYear())  
+        console.log("hour is ", x.getHours())
+        console.log("min is ", x.getMinutes())
+        console.log("sec is ", x.getSeconds())
+        console.log("millisec is ", x.getMilliseconds())
+        document.getElementById("div").innerHTML=x.getDate()+"-"+ (x.getMonth()+1)+"-"+x.getFullYear()
+    }</script>
+</html>
