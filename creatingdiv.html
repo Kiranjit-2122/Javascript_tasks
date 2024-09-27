@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create a div</h1>
+    <div id="div"></div>
+    text <input id="text"> 
+    colour <input id="color"> <br><br>
+    width <input id="width">  
+    height <input id="height"><br><br>
+    background <input id="backgroundcolor"><br><br>
+    <button onclick="getdiv()">CREATE DIV</button>
+    <script>
+        function getdiv(){
+           var a= document.getElementById("color").value
+           var b = document.getElementById("width").value
+            var c= document.getElementById("text").value
+            var d =document.getElementById("backgroundcolor").value
+            var e = document.getElementById("height").value
+            document.getElementById("div").style.color=a
+            document.getElementById("div").style.width=b
+            document.getElementById("div").innerText=c
+            document.getElementById("div").style.backgroundColor=d
+            document.getElementById("div").style.height=e
+        }
+    </script>
+</body>
+
+</html>
