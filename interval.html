@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="setinterval()">Start SetTimeInterval function</button>
+    <button onclick="stopinterval()">Stop setTimeInterval function</button><br><br>
+    <button onclick="settimeout()">start setTimeout function</button>
+    <button onclick="stoptimeout()">StopTimeout function</button>
+
+</body>
+<script>
+    function setinterval(){
+        x = setInterval(printmsg1,4000)
+    }
+    function stopinterval(){
+       clearInterval(x)
+    }
+    function printmsg1(){
+        alert("hello Kiran! What's up")
+    }
+    function settimeout(){
+       y=setTimeout(printmsg2,3000)
+    }
+
+    function printmsg2(){
+        alert("Hiiii! Everyone")
+    }
+
+    function stoptimeout(){
+        clearInterval(y)
+    }    
+</script>
+</html>
