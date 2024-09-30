@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #error1{
+            color: red;
+        }
+        #error2{
+            color: red;
+        }
+        #error3{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit.html" onsubmit=" return checkform()">
+        Enter name : 
+        <input id="name">
+        <span id="error1"></span>
+        <br>
+        <br>
+        Enter Email :
+        <input id= email>
+        <span id="error2"></span>
+        <br>
+        <br>
+        Enter password :
+        <input id="password">
+        <span id="error3"></span>
+        <br>
+        <br>
+        <button>Submit</button>
+    </form>
+    <script>
+        function checkform(){
+            var name = document.getElementById("name").value
+            var email = document.getElementById("email").value
+            var pass = document.getElementById("password").value 
+            if(name.trim()=="" || email.trim()=="" || pass.trim()==""){
+                if(name.trim()==""){
+                document.getElementById("error1").innerHTML="please fill your name"
+                
+            }
+            else{
+                 document.getElementById("error1").innerHTML=""
+            }
+
+           if(email.trim()==""){
+                document.getElementById("error2").innerHTML="please fill your email"
+                
+            }
+            else{
+                 document.getElementById("error2").innerHTML=""
+            }
+
+           if(pass.trim()==""){
+                document.getElementById("error3").innerHTML="Please fill your password" 
+            }
+            else{
+                  document.getElementById("error3").innerHTML=""
+            }
+            return false
+            }
+
+
+        }
+    </script>
+</body></html>
