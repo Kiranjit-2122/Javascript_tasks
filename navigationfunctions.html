@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="navigate()">Navigate</button>
+    <button onclick="replace()">Replace</button>
+    <button onclick="getGeo()">getGeo</button>
+    <button onclick="href()">HREF</button>
+</body>
+<script>
+    function navigate(){
+        window.location.assign("submit.html")   // back option available
+    }
+
+    function replace(){
+        window.location.replace("submit.html")  //  no back option available
+    }
+
+    function getGeo(){
+        console.log(navigator);                  //  current location through  longitute and latitude
+        navigator.geolocation.getCurrentPosition(
+            function(a){
+                console.log(a.coords.longitude);
+                console.log(a.coords.latitude);
+            }
+        )
+    }
+
+    function href(){
+        console.log(window.location.href);   // users current path 
+        // window.location.href="submit.html"   // change the path
+    }
+</script>
+</html>
