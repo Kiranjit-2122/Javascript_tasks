@@ -21,8 +21,8 @@
     }
 
     function getGeo(){
-        console.log(navigator);                  //  current location through  longitute and latitude
-        navigator.geolocation.getCurrentPosition(
+        console.log(navigator);                 
+        navigator.geolocation.getCurrentPosition(     //  current location through  longitute and latitude
             function(a){
                 console.log(a.coords.longitude);
                 console.log(a.coords.latitude);
